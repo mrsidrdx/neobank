@@ -1,0 +1,557 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+      <title>Neo Bank</title>
+      <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+      <link rel="stylesheet" href="{% static "css/all.min.css" %}" type="text/css">
+      <link rel="stylesheet" href="{% static "css/swiper.min.css" %}" type="text/css">
+      <link rel="stylesheet" href="{% static "css/animate.css" %}" type="text/css">
+      <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css">
+      <link rel="stylesheet" href="{% static "css/elegant-icons.min.css" %}" type="text/css">
+      <link rel="stylesheet" href="{% static "css/simple-line-icons.css" %}" type="text/css">
+      <link rel="stylesheet" href="{% static "css/app.css" %}" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+   </head>
+   <body id="home-version-6" class="home-version-6" data-style="default">
+      <a href="#main_content" data-type="section-switch" class="return-to-top"><i class="fa fa-chevron-up"></i></a>
+      <div id="main_content">
+         <header class="site-header header-eight header_trans-fixed" data-top="992">
+            <div class="container">
+               <div class="header-inner">
+                  <div class="toggle-menu"><span class="bar"></span> <span class="bar"></span> <span class="bar"></span></div>
+                  <div class="site-mobile-logo">
+                     <a href="index.html" class="logo">
+                        NEOBANK<!--<img src="img/logo-three.png" alt="" class="main-logo"> <img src="img/logo-three.png" alt="" class="sticky-logo"> -->
+                     </a>
+                  </div>
+                  <nav class="site-nav">
+                     <div class="close-menu"><span>Close</span> <i class="ei ei-icon_close"></i></div>
+                     <div class="site-logo">
+                        <a href="index.html" class="logo">
+                           NEOBANK<!--<img src="img/logo-three.png" alt="" class="main-logo"> <img src="img/logo-three.png" alt="" class="sticky-logo"> -->
+                        </a>
+                     </div>
+                     <div class="menu-wrapper" data-top="992">
+                        <ul class="site-main-menu">
+                           <li>
+                              <a href="aboutus.html">About Us</a>
+                           </li>
+                           <li><a href="services.html"> Services</a></li>
+
+                           <li>
+                              <a href="news-event.html">News & Media</a>
+                           </li>
+                           <li>
+                              <a href="blog.html">Blog</a>
+                           </li>
+
+                           <li >
+                              <a href="contactus.html">Contact us</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <!--    <div class="nav-right"><a href="singin.html" class="nav-btn">Sign In</a></div> -->
+                  </nav>
+               </div>
+            </div>
+         </header>
+         <section class="banner banner-eight">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6">
+                     <div class="banne-content-wrapper-eight">
+                        <!--  <h3 class="subtitle wow fadeInUp"><span>Get</span>Instant </h3>  -->
+                        <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s"><span>Best </span><br>NEO BANK </h1>
+                        <p class="description wow fadeInUp" data-wow-delay="0.5s">Lost the plot chancer James Bond spiffing good time brolly excuse my French victoria sponge jolly good.!</p>
+                        <div class="banner-button-container">
+
+                           <a href="#" class="app-btn-two btn-light wow flipInX" data-wow-delay="0.5s"><img src="{% static "img/google-play.svg" %}"><span class="btn-text"><span class="text-top">Get on the</span> <span>Google play</span></span></a>
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="banner-six-promo-image text-right">
+                        <img src="{% static "img/t2.png" %}" class="wow pixZoomIn" alt="">
+                        <!-- <div class="banner-leaf">
+                           <div class="leaf-left"><img src="img/header-b.svg" alt=""></div>
+                           <div class="leaf-right"><img src="img/leaf2.png" alt=""></div>
+                           </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="banner-background-element">
+               <!--   <div class="ball"><img src="img/ball.png" data-parallax="" alt=""></div>
+                  <div class="triangle"><img src="img/triangle.png" alt=""></div>
+                  <div class="dot-shape"><img src="img/dot.png" alt=""></div> -->
+               <div class="circle-bg">
+                  <!--<img src="img/slide-main.jpg" alt="">-->
+               </div>
+            </div>
+         </section>
+
+         <section class="app-tabs">
+            <div class="container-wrap bg-color-green">
+               <div class="container">
+                  <div id="pix-tabs" class="tabs-three">
+                     <div class="row">
+                        <div class="col-lg-12 ">
+                           <div class="download-tab-content mt-md-n5">
+                              <div class="section-title style-five text-center">
+                                 <h2 class="title wow fadeInUp" data-wow-delay="0.3s">Our Services</h2>
+                              </div>
+                              <ul id="pix-tabs-nav" class="wow fadeInUp d-flex flex-row" data-wow-delay="0.7s">
+                                 <li><a href="#feature_tab1"> Employees</a></li>
+                                 <li ><a href="#feature_tab2" >Shop Keepers</a></li>
+                                 <li><a href="#feature_tab3"> Self  Employed
+								 </a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="tabs-content-wrapper">
+                              <div id="pix-tabs-content" class="job-board-tabs-content wow fadeIn">
+                                 <div id="feature_tab1" class="content">
+                                    <div class="row">
+                                       <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                          <div class="tab-image"><img src="{% static "img/employee.jpeg" %}" alt=""></div>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                          <div class="service-container">
+
+
+
+
+
+
+
+                           <ul class="service-list ">
+                                                <li><a href="#"> Wealth</a> </li>
+                                                <li><a href="#">Manage Your Expenses
+
+											</a> </li>
+                                                <li><a href="#">Retirement Plans</a> </li>
+                                                <li><a href="#">Credit Card</a> </li>
+                                                <li><a href="#">Bank Balance</a> </li>
+                                                <li><a href="#">Send Money</a> </li>
+												    <li><a href="#">Tax Returns</a> </li>
+													    <li><a href="#"> Utility Bills</a> </li>
+														    <li><a href="#">Budget Analysis </a> </li>
+															    <li><a href="#">Recieve Money</a> </li>
+																    <li><a href="#">Vault</a> </li>
+																	    <li><a href="#">Wallet</a> </li>
+
+                                             </ul>
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                               <div id="feature_tab2" class="content">
+                                    <div class="row">
+                                       <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                          <div class="tab-image"><img src="{% static "img/shopkeeper.jpg" %}" alt=""></div>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                          <div class="service-container">
+                                             <ul class="service-list">
+                                                <li><a href="servicespage.html"> Wealth </a> </li>
+                                                <li><a href="manage-expenses.html"> Manage your Expenses</a> </li>
+												   <li><a href="#">  Retirement Plans</a> </li>
+                                                <li><a href="#">Credit Card </a> </li>
+												   <li><a href="#"> Manage Your Stock </a> </li>
+                                                <li><a href="#"> Bank Balance </a> </li>
+												   <li><a href="#"> Send Money </a> </li>
+                                                <li><a href="#"> Tax Returns </a> </li>
+												   <li><a href="#"> Utility Bills </a> </li>
+                                                <li><a href="#"> Manage Your Orders  </a> </li>
+												    <li><a href="#"> Budget Analysis</a> </li>
+													    <li><a href="#">Receive Money </a> </li>
+														    <li><a href="#">Vault</a> </li>
+															    <li><a href="#">Wallet</a> </li>
+
+
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+								 <div id="feature_tab3" class="content">
+                                    <div class="row">
+                                       <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                          <div class="tab-image"><img src="{% static "img/selfemployed.jpeg" %}" alt=""></div>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                          <div class="service-container">
+                                             <ul class="service-list">
+                                                  <li><a href="#"> Wealth </a> </li>
+                                                <li><a href="#"> Manage your Expenses</a> </li>
+												   <li><a href="#">  Retirement Plans</a> </li>
+                                                <li><a href="#">Credit Card </a> </li>
+												   <li><a href="#"> Manage Your Orders </a> </li>
+                                                <li><a href="#"> Bank Balance </a> </li>
+												   <li><a href="#"> Send Money </a> </li>
+                                                <li><a href="#"> Tax Returns </a> </li>
+												   <li><a href="#"> Utility Bills </a> </li>
+
+												    <li><a href="#"> Budget Analysis</a> </li>
+													    <li><a href="#">Receive Money </a> </li>
+														    <li><a href="#">Vault</a> </li>
+															    <li><a href="#">Wallet</a> </li>
+
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-bg-shape-wrapper">
+                                 <div class="dot"><img src="{% static "img/dot1.png" %}" class="dot-shape" alt=""></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="app_image_content">
+            <div class="container">
+               <div class="app-image-content-wrapper-one">
+                  <div class="row align-items-center">
+                     <div class="col-lg-5">
+                        <div class="app-download-image"><img src="{% static "img/t2.png" %}" class="wow fadeInDown" alt=""></div>
+                     </div>
+                     <div class="col-lg-7">
+                        <div class="image-content-three app-content-wrap pl-85">
+                           <div class="section-title">
+                              <h2 class="title wow fadeInUp">Quickly query<br>and receive Money</h2>
+                              <p class="wow fadeInUp" data-wow-delay="0.3s">Mufty chimney pot a blinding shot posh A bit of how's your father barney don't get shirty with me, nice one it's all gone.</p>
+                              <ul class="list-items list-icon-arrow wow fadeInUp" data-wow-delay="0.4s">
+                                 <li>Quick Access</li>
+                                 <li>Easy setup process</li>
+                                 <li>Live call support</li>
+                              </ul>
+                           </div>
+                           <a href="#" class="app-btn-two btn-light wow flipInX" data-wow-delay="0.5s"><img src="{% static "img/google-play.svg" %}"><span class="btn-text"><span class="text-top">Get on the</span> <span>Google play</span></span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="testimonials-six" data-bg-image="media/background/testimonial-bg.svg" style="background-image: url(../img/1.png);">
+            <div class="container">
+               <div class="section-title style-four text-center">
+                  <h2 class="title wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: i;">Tesminonial</h2>
+                  <h3 class="sub-title wow pixFadeUp" style="visibility: visible; animation-name: i;">What our customers are saying</h3>
+               </div>
+               <div id="testimonial-wrapper-six" class="wow pixFadeUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: i;">
+                  <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="testimonial-six" data-speed="700" data-autoplay="5000" data-perpage="3" data-space="45" data-breakpoints="{&quot;991&quot;: {&quot;slidesPerView&quot;: 1}}">
+                     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1620px, 0px, 0px);">
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/18.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Joss Sticks</h3>
+                                       <span class="job">Content Writter</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/19.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Hanson Deck</h3>
+                                       <span class="job">UX Designer</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/7.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Penny Tool</h3>
+                                       <span class="job">Developer</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/5.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Joss Sticks</h3>
+                                       <span class="job">Content Writter</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-visible swiper-slide-active" data-swiper-slide-index="1" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/6.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Hanson Deck</h3>
+                                       <span class="job">UX Designer</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-visible swiper-slide-next" data-swiper-slide-index="2" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/7.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Penny Tool</h3>
+                                       <span class="job">Developer</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-visible swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/5.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Joss Sticks</h3>
+                                       <span class="job">Content Writter</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/6.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Hanson Deck</h3>
+                                       <span class="job">UX Designer</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 360px; margin-right: 45px;">
+                           <div class="testimonial-six">
+                              <div class="testi-content-inner">
+                                 <div class="testimonial-content">
+                                    <p>Cheeky bugger porkies wind up cras the little rotter arse brown bread, down the pub cheesed off I is sloshed, absolutely bladdered brilliant happy.</p>
+                                    <ul class="rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                 </div>
+                                 <div class="testimonial-bio">
+                                    <div class="avatar"><img src="{% static "img/7.jpg" %}" alt=""></div>
+                                    <div class="bio-info">
+                                       <h3 class="name">Penny Tool</h3>
+                                       <span class="job">Developer</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                  </div>
+                  <div class="swiper-pagination style-three swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+               </div>
+            </div>
+         </section>
+         <footer id="footer" class="footer-app">
+            <div class="container">
+               <div class="footer-inner">
+                  <div class="row wow fadeInUp">
+                     <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget footer-widget widget-about">
+                           <a href="#" class="footer-logo">
+                              <!--<img src="img/main-logo.png" alt=""> --> NEOBANK
+                           </a>
+                           <p>Neo Bank is an online lending platform for easy & instant Business loan, Personal loan, Gold loan, Payday Loan, Group loan, Bill discounting etc.</p>
+
+                        </div>
+                     </div>
+
+                     <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="widget footer-widget">
+                           <h3 class="widget-title">Company</h3>
+                           <ul class="footer-menu">
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Careers</a></li>
+                              <li><a href="#">Contact Us</a></li>
+                              <li><a href="#">Terms of Service</a></li>
+                              <li><a href="#">Privacy Policy</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="widget footer-widget">
+                           <h3 class="widget-title">Services</h3>
+                           <ul class="footer-menu">
+                              <li><a href="#">Terms & Condition</a></li>
+                              <li><a href="#">Privacy Policy </a></li>
+                              <li><a href="#">Pricing</a></li>
+                              <li><a href="#">Enterprise</a></li>
+                              <li><a href="#">User Journey</a></li>
+                           </ul>
+                        </div>
+                     </div>
+					       <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="widget footer-widget widget-about">
+                                <h3 class="widget-title">Connect with us</h3>
+
+
+
+                           <a href="#" class="app-btn-two btn-light wow flipInX mb-3" data-wow-delay="0.5s"><img src="{% static "img/google-play.svg" %}"><span class="btn-text"><span class="text-top">Get on the</span> <span>Google play</span></span></a>
+
+
+                           <h4 class="footer-title">Be Social with Us</h4>
+                           <ul class="social-share-link">
+                              <li><a href="#" class="share_facebook"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="#" class="share_twitter"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="#" class="share_pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                              <li><a href="#" class="share_linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="site-info">
+                  <div class="copyright text-center">
+                     <p>All Rights Reserved Design by <a href="" target="_blank">Neobank.com</a></p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script src="{% static "js/jquery.min.js" %}"></script>
+      <script src="{% static "js/bootstrap.min.js" %}"></script>
+      <script src="{% static "js/swiper.min.js" %}"></script>
+      <script src="{% static "js/jquery.appear.js" %}"></script>
+      <script src="{% static "js/wow.min.js" %}"></script>
+
+      <script src="{% static "js/header.js" %}"></script>
+      <script src="{% static "js/app.js" %}"></script>
+      <script>
+         var swiper = new Swiper('.swiper-container', {
+           slidesPerView: 3,
+           spaceBetween: 30,
+           pagination: {
+             el: '.swiper-pagination',
+             clickable: true,
+           },
+         });
+      </script>
+   </body>
+</html>
