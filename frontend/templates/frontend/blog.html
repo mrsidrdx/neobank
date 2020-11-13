@@ -1,320 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
-      <title>Neo Bank</title>
-         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-      <!--<link rel="stylesheet" href="css/all.min.css" type="text/css"> -->
-      <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
-      <link rel="stylesheet" href="css/animate.css" type="text/css">
-      <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-      <link rel="stylesheet" href="css/elegant-icons.min.css" type="text/css">
-      <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css">
-      <link rel="stylesheet" href="css/app.css" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
-   </head>
-   <body class="home-version-6" data-style="default">
-      <a href="#main_content" data-type="section-switch" class="return-to-top"><i class="fa fa-chevron-up"></i></a>
-      <div id="main_content">
-         <header class="site-header header-eight header_trans-fixed" data-top="992">
-            <div class="container">
-               <div class="header-inner">
-                  <div class="toggle-menu"><span class="bar"></span> <span class="bar"></span> <span class="bar"></span></div>
-                  <div class="site-mobile-logo">
-                     <a href="index.html" class="logo">
-                        NEOBANK<!--<img src="img/logo-three.png" alt="" class="main-logo"> <img src="img/logo-three.png" alt="" class="sticky-logo"> -->
-                     </a>
-                  </div>
-                  <nav class="site-nav">
-                     <div class="close-menu"><span>Close</span> <i class="ei ei-icon_close"></i></div>
-                     <div class="site-logo">
-                        <a href="index.html" class="logo">
-                           NEOBANK<!--<img src="img/logo-three.png" alt="" class="main-logo"> <img src="img/logo-three.png" alt="" class="sticky-logo"> -->
-                        </a>
-                     </div>
-                       <div class="menu-wrapper" data-top="992">
-                        <ul class="site-main-menu">
-                           <li>
-                              <a href="aboutus.html">About Us</a>
-                           </li>
-                           <li><a href="services.html"> Services</a></li>
-                         
-                           <li>
-                              <a href="news-event.html">News & Media</a>
-                           </li>
-                           <li>
-                              <a href="blog.html">Blog</a>
-                           </li>
-                  
-                           <li >
-                              <a href="contactus.html">Contact us</a>
-                           </li>
-                        </ul>
-                     </div>
-                     <!--    <div class="nav-right"><a href="singin.html" class="nav-btn">Sign In</a></div> -->
-                  </nav>
-               </div>
-            </div>
-         </header>
-          <section class="page-banner" >
-            <div class="container">
-               <div class="page-title-wrapper">
-                  <h1 class="page-title">Blog</h1>
-                  <ul class="bradcurmed">
-                     <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
-                     <li>Blog</li>
-                  </ul>
-               </div>
-            </div>
-      <div  style="background-image: url(../img/parallax-2.jpg)" data-parallax="scroll"></div> 
-            <ul class="animate-ball">
-               <li class="ball"></li>
-               <li class="ball"></li>
-               <li class="ball"></li>
-               <li class="ball"></li>
-            </ul>
-         </section>
-      <div class="blog-post-archive">
-   <div class="container">
-      <div class="row">
-         <div class="col-lg-9">
-            <div class="post-wrapper d-flex flex-row">
-               <article class="post mr-2">
-                  <div class="feature-image"><a href="#"><img src="img/blog1.jpg" alt=""></a></div>
-                  <div class="blog-content">
-                     <ul class="post-meta">
-                        <li><a href="#">Oct 16, 2019</a></li>
-                        <li><a href="#">4 Comments</a></li>
-                   
-                     </ul>
-                     <h3 class="entry-title"><a href="#">Young Guns Reflections: Paul Felton</a></h3>
-                     <p>The little rotter spiffing good time lemon squeezy smashing excuse my French old !</p>
-                     <a href="#" class="read-more">Read More</a>
-               
-                  </div>
-               </article>
-              <article class="post mr-2">
-                  <div class="feature-image"><a href="#"><img src="img/blog1.jpg" alt=""></a></div>
-                  <div class="blog-content">
-                     <ul class="post-meta">
-                        <li><a href="#">Oct 16, 2019</a></li>
-                        <li><a href="#">4 Comments</a></li>
-                       
-                     </ul>
-                     <h3 class="entry-title"><a href="#">Young Guns Reflections: Paul Felton</a></h3>
-                     <p>The little rotter spiffing good time lemon squeezy smashing excuse my French old, !</p>
-                     <a href="#" class="read-more">Read More </a>
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block content %}
+<section class="page-banner" >
+  <div class="container">
+     <div class="page-title-wrapper">
+        <h1 class="page-title">Blog</h1>
+        <ul class="bradcurmed">
+           <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+           <li>Blog</li>
+        </ul>
+     </div>
+  </div>
+<div  style="background-image: url(../img/parallax-2.jpg)" data-parallax="scroll"></div>
+  <ul class="animate-ball">
+     <li class="ball"></li>
+     <li class="ball"></li>
+     <li class="ball"></li>
+     <li class="ball"></li>
+  </ul>
+</section>
+<div class="blog-post-archive">
+<div class="container">
+<div class="row">
+<div class="col-lg-9">
+  <div class="post-wrapper d-flex flex-row">
+     <article class="post mr-2">{% static 'img/blog1.jpg' %}
+        <div class="feature-image"><a href="#"><img src="{% static 'img/blog1.jpg' %}" alt=""></a></div>
+        <div class="blog-content">
+           <ul class="post-meta">
+              <li><a href="#">Oct 16, 2019</a></li>
+              <li><a href="#">4 Comments</a></li>
 
-                  </div>
-               </article>
-      
-              
-            </div>
-			 <ul class="post-navigation">
-                  <li class="active">1</li>
-                  <li><a href="#">2</a></li>
-                  <li class="next"><a href="#"><i class="ei ei-arrow_carrot-right"></i></a></li>
-               </ul>
-         </div>
-         <div class="col-lg-3">
-            <div class="sidebar" id="sidebar">
-   
-               <div id="gp-posts-widget-2" class="widget gp-posts-widget">
-                  <h2 class="widget-title">Latest Blog</h2>
-                  <div class="gp-posts-widget-wrapper">
-                     <div class="post-item">
-                      
-                        <div class="post-widget-info">
-                           <h5 class="post-widget-title"><a href="#" title="This Is Test Post">The Festive Season is Approaching</a></h5>
-                           <span class="post-date">May 16, 2019, Saturday</span>
-                        </div>
-                     </div>
-                     <div class="post-item">
-                       
-                        <div class="post-widget-info">
-                           <h5 class="post-widget-title"><a href="#" title="This Is Test Post">Shrimp Scampi With Linguini</a></h5>
-                           <span class="post-date">Apri 16, 2019, Thursday</span>
-                        </div>
-                     </div>
-                     <div class="post-item">
-                       
-                        <div class="post-widget-info">
-                           <h5 class="post-widget-title"><a href="#" title="This Is Test Post">Join Us For a Delicious Event</a></h5>
-                           <span class="post-date">Oct 16, 2019, Monday</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-             <!--  <div id="widget_recent_comments" class="widget widget_recent_comments">
-                  <h2 class="widget-title">Recent Comments</h2>
-                  <div class="recent-comments">
-                     <div class="comment-list">
-                        <div class="icon"><i class="ei ei-icon_chat_alt"></i></div>
-                        <div class="comment-content">
-                           <h3>Bailey Wonger <span>on</span></h3>
-                           <p><a href="#">My lady mush hanky panky young delinquent.!</a></p>
-                        </div>
-                     </div>
-                     <div class="comment-list">
-                        <div class="icon"><i class="ei ei-icon_chat_alt"></i></div>
-                        <div class="comment-content">
-                           <h3>Hans Down <span>on</span></h3>
-                           <p><a href="#">Why I say old chap that is<br>spiffing daft, blow.!</a></p>
-                        </div>
-                     </div>
-                     <div class="comment-list">
-                        <div class="icon"><i class="ei ei-icon_chat_alt"></i></div>
-                        <div class="comment-content">
-                           <h3>Justin Case <span>on</span></h3>
-                           <p><a href="#">Tomfoolery hanky panky<br>geeza I my good.!</a></p>
-                        </div>
-                     </div>
-                  </div>
-               </div> -->
-          
-            </div>
-         </div>
-      </div>
-   </div>
+           </ul>
+           <h3 class="entry-title"><a href="#">Young Guns Reflections: Paul Felton</a></h3>
+           <p>The little rotter spiffing good time lemon squeezy smashing excuse my French old !</p>
+           <a href="#" class="read-more">Read More</a>
+
+        </div>
+     </article>
+    <article class="post mr-2">
+        <div class="feature-image"><a href="#"><img src="{% static 'img/blog1.jpg' %}" alt=""></a></div>
+        <div class="blog-content">
+           <ul class="post-meta">
+              <li><a href="#">Oct 16, 2019</a></li>
+              <li><a href="#">4 Comments</a></li>
+
+           </ul>
+           <h3 class="entry-title"><a href="#">Young Guns Reflections: Paul Felton</a></h3>
+           <p>The little rotter spiffing good time lemon squeezy smashing excuse my French old, !</p>
+           <a href="#" class="read-more">Read More </a>
+
+        </div>
+     </article>
+
+
+  </div>
+<ul class="post-navigation">
+        <li class="active">1</li>
+        <li><a href="#">2</a></li>
+        <li class="next"><a href="#"><i class="ei ei-arrow_carrot-right"></i></a></li>
+     </ul>
 </div>
-       
-         <section class="call-to-action">
-            <div class="overlay-bg"><img src="img/b.jpeg" alt="bg"></div>
-            <div class="container">
-               <div class="action-content text-center wow pixFadeUp">
-                  <h2 class="title">We are optimists who<br>love to work together</h2>
-                  <p>Spiffing good time nice one mush ummm I'm telling down the pub spend<br>a penny only a quid such a fibber tomfoolery, on your bike.</p>
-                  <div class="banner-button-container">
-     
-                           <a href="#" class="app-btn-two btn-light wow flipInX" data-wow-delay="0.5s"><img src="img/google-play.svg"><span class="btn-text"><span class="text-top">Get on the</span> <span>Google play</span></span></a>
-     
-                        </div>
-               </div>
-            </div>
-    
-         </section>
-		    <section class="brand-logo-ab">
-            <div class="section-small text-center">
-               <h2 class="title wow pixFadeUp">Trusted Over 2500+ Companies</h2>
-            </div>
-            <div class="container">
-               <div class="swiper-container logo-carousel wow pixFadeUp" id="logo-carousel" data-perpage="6" data-breakpoints='{"1024": {"slidesPerView": 4}, "768": {"slidesPerView": 4}, "620": {"slidesPerView": 3}}'>
-                  <div class="swiper-wrapper">
-                     <div class="swiper-slide">
-                        <div class="brand-logo"><img src="img/18.png" alt="brand"></div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand-logo"><img src="img/18.png" alt="brand"></div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand-logo"><img src="img/18.png" alt="brand"></div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand-logo"><img src="img/18.png" alt="brand"></div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand-logo"><img src="img/18.png" alt="brand"></div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand-logo"><img src="img/18.png" alt="brand"></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-        
-   
-            <footer id="footer" class="footer-app">
-            <div class="container">
-               <div class="footer-inner">
-                  <div class="row wow fadeInUp">
-                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="widget footer-widget widget-about">
-                           <a href="#" class="footer-logo">
-                              <!--<img src="img/main-logo.png" alt=""> --> NEOBANK
-                           </a>
-                           <p>Neo Bank is an online lending platform for easy & instant Business loan, Personal loan, Gold loan, Payday Loan, Group loan, Bill discounting etc.</p>
-                         
-                        </div>
-                     </div>
-                   
-                     <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="widget footer-widget">
-                           <h3 class="widget-title">Company</h3>
-                           <ul class="footer-menu">
-                              <li><a href="#">About Us</a></li>
-                              <li><a href="#">Careers</a></li>
-                              <li><a href="#">Contact Us</a></li>
-                              <li><a href="#">Terms of Service</a></li>
-                              <li><a href="#">Privacy Policy</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="widget footer-widget">
-                           <h3 class="widget-title">Services</h3>
-                           <ul class="footer-menu">
-                              <li><a href="#">About</a></li>
-                              <li><a href="#">Legal Notice</a></li>
-                              <li><a href="#">Pricing</a></li>
-                              <li><a href="#">Enterprise</a></li>
-                              <li><a href="#">User Journey</a></li>
-                           </ul>
-                        </div>
-                     </div>
-					       <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="widget footer-widget widget-about">
-                                <h3 class="widget-title">Connect with us</h3>
-                     
-                                                      <a href="#" class="app-btn-two btn-light wow flipInX mb-3" data-wow-delay="0.5s"><img src="img/google-play.svg"><span class="btn-text"><span class="text-top">Get on the</span> <span>Google play</span></span></a>
-     
-                           <h4 class="footer-title">Be Social with Us</h4>
-                           <ul class="social-share-link">
-                              <li><a href="#" class="share_facebook"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#" class="share_twitter"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#" class="share_pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-                              <li><a href="#" class="share_linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="site-info">
-                  <div class="copyright text-center">
-                     <p>All Rights Reserved Design by <a href="" target="_blank">Neobank.com</a></p>
-                  </div>
-               </div>
-            </div>
-         </footer>
-      </div>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/swiper.min.js"></script>
-      <script src="js/jquery.appear.js"></script>
-      <script src="js/wow.min.js"></script>
-      <!--  <script src="js/countUp.min.js"></script>
-         <script src="js/isotope.pkgd.min.js"></script>
-         <script src="js/imagesloaded.pkgd.min.js"></script>
-         <script src="js/jquery.parallax-scroll.js"></script>
-          <script src="js/jquery.magnific-popup.min.js"></script>
-         <script src="js/gmap3.min.js"></script> -->
-      <script src="js/header.js"></script>
-      <script src="js/app.js"></script>
-      <script>
-   var div_right = $('.menu').offset().right;
+<div class="col-lg-3">
+  <div class="sidebar" id="sidebar">
 
-$(window).scroll(function() {
-    var window_top = $(window).scrollRight() - 0;
-    if (window_top > div_right) {
-        if (!$('#sidebar).is('.sticky')) {
-            $('#sidebar').addClass('sticky');
-        }
-    } else {
-        $('#sidebar').removeClass('sticky');
-    }
-});
-      </script>
-   </body>
-</html>
+     <div id="gp-posts-widget-2" class="widget gp-posts-widget">
+        <h2 class="widget-title">Latest Blog</h2>
+        <div class="gp-posts-widget-wrapper">
+           <div class="post-item">
+
+              <div class="post-widget-info">
+                 <h5 class="post-widget-title"><a href="#" title="This Is Test Post">The Festive Season is Approaching</a></h5>
+                 <span class="post-date">May 16, 2019, Saturday</span>
+              </div>
+           </div>
+           <div class="post-item">
+
+              <div class="post-widget-info">
+                 <h5 class="post-widget-title"><a href="#" title="This Is Test Post">Shrimp Scampi With Linguini</a></h5>
+                 <span class="post-date">Apri 16, 2019, Thursday</span>
+              </div>
+           </div>
+           <div class="post-item">
+
+              <div class="post-widget-info">
+                 <h5 class="post-widget-title"><a href="#" title="This Is Test Post">Join Us For a Delicious Event</a></h5>
+                 <span class="post-date">Oct 16, 2019, Monday</span>
+              </div>
+           </div>
+        </div>
+     </div>
+   <!--  <div id="widget_recent_comments" class="widget widget_recent_comments">
+        <h2 class="widget-title">Recent Comments</h2>
+        <div class="recent-comments">
+           <div class="comment-list">
+              <div class="icon"><i class="ei ei-icon_chat_alt"></i></div>
+              <div class="comment-content">
+                 <h3>Bailey Wonger <span>on</span></h3>
+                 <p><a href="#">My lady mush hanky panky young delinquent.!</a></p>
+              </div>
+           </div>
+           <div class="comment-list">
+              <div class="icon"><i class="ei ei-icon_chat_alt"></i></div>
+              <div class="comment-content">
+                 <h3>Hans Down <span>on</span></h3>
+                 <p><a href="#">Why I say old chap that is<br>spiffing daft, blow.!</a></p>
+              </div>
+           </div>
+           <div class="comment-list">
+              <div class="icon"><i class="ei ei-icon_chat_alt"></i></div>
+              <div class="comment-content">
+                 <h3>Justin Case <span>on</span></h3>
+                 <p><a href="#">Tomfoolery hanky panky<br>geeza I my good.!</a></p>
+              </div>
+           </div>
+        </div>
+     </div> -->
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<section class="call-to-action">
+  <div class="overlay-bg"><img src="{% static 'img/b.jpeg' %}" alt="bg"></div>
+  <div class="container">
+     <div class="action-content text-center wow pixFadeUp">
+        <h2 class="title">We are optimists who<br>love to work together</h2>
+        <p>Spiffing good time nice one mush ummm I'm telling down the pub spend<br>a penny only a quid such a fibber tomfoolery, on your bike.</p>
+        <div class="banner-button-container">
+
+                 <a href="#" class="app-btn-two btn-light wow flipInX" data-wow-delay="0.5s"><img src="{% static 'img/google-play.svg' %}"><span class="btn-text"><span class="text-top">Get on the</span> <span>Google play</span></span></a>
+
+              </div>
+     </div>
+  </div>
+
+</section>
+<section class="brand-logo-ab">
+  <div class="section-small text-center">
+     <h2 class="title wow pixFadeUp">Trusted Over 2500+ Companies</h2>
+  </div>
+  <div class="container">
+     <div class="swiper-container logo-carousel wow pixFadeUp" id="logo-carousel" data-perpage="6" data-breakpoints='{"1024": {"slidesPerView": 4}, "768": {"slidesPerView": 4}, "620": {"slidesPerView": 3}}'>
+        <div class="swiper-wrapper">
+           <div class="swiper-slide">
+              <div class="brand-logo"><img src="{% static 'img/18.png' %}" alt="brand"></div>
+           </div>
+           <div class="swiper-slide">
+              <div class="brand-logo"><img src="{% static 'img/18.png' %}" alt="brand"></div>
+           </div>
+           <div class="swiper-slide">
+              <div class="brand-logo"><img src="{% static 'img/18.png' %}" alt="brand"></div>
+           </div>
+           <div class="swiper-slide">
+              <div class="brand-logo"><img src="{% static 'img/18.png' %}" alt="brand"></div>
+           </div>
+           <div class="swiper-slide">
+              <div class="brand-logo"><img src="{% static 'img/18.png' %}" alt="brand"></div>
+           </div>
+           <div class="swiper-slide">
+              <div class="brand-logo"><img src="{% static 'img/18.png' %}" alt="brand"></div>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+{% endblock %}
